@@ -1,8 +1,9 @@
 using System;
+using Any.Framework;
 
-namespace Any
+namespace Any.Providers
 {
-    class IntProvider : IProvider
+    class IntProvider : IAnyProvider
     {
         private readonly Random _randomGenerator;
 

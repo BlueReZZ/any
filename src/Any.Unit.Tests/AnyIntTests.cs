@@ -1,12 +1,12 @@
-using System;
+using Any.Framework;
 using NUnit.Framework;
 
-namespace Any
+namespace Any.Unit.Tests
 {
     [TestFixture]
     public class AnyIntTests
     {
-        private readonly dynamic Any = new AnyController();
+        private readonly dynamic Any = new AnyGenerator();
 
         [Test]
         public void IntTests()

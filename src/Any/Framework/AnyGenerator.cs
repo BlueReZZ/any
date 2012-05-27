@@ -1,16 +1,17 @@
 using System;
 using System.Collections.Generic;
 using System.Dynamic;
+using Any.Providers;
 
-namespace Any
+namespace Any.Framework
 {
-    public class AnyController : DynamicObject
+    public class AnyGenerator : DynamicObject
     {
         private const string BETWEEN = "Between";
         private const string EXCEPT = "Except";
 
-        private readonly Dictionary<string, IProvider> _providers = 
-            new Dictionary<string, IProvider>()
+        private readonly Dictionary<string, IAnyProvider> _providers = 
+            new Dictionary<string, IAnyProvider>()
             {
                 {"Int", new IntProvider()}
             }; 

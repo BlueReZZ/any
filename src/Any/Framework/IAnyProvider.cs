@@ -1,6 +1,6 @@
-﻿namespace Any
+﻿namespace Any.Framework
 {
-    internal interface IProvider
+    internal interface IAnyProvider
     {
         dynamic Any();
         dynamic AnyBetween(dynamic lower, dynamic upper);
